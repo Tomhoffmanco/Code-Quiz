@@ -1,0 +1,44 @@
+#questionBox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  width: 50%;
+  border: 1px solid black;
+  height: 500px;
+}
+
+#boxBar {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid red;
+}
+
+#leftDisplay {
+  margin-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  border: 1px solid red;
+}
+
+#rightDisplay {
+  margin-left: auto;
+  border: 1px solid red;
+}
+
+#rightDisplay h3,
+p {
+  display: inline-block;
+}
+
+#boxInfo {
+  padding-left: 120px;
+  padding-right: 1200px;
+}
+
+#buttonsContainer {
+  margin-top: 20px;
+  border: 1px solid red;
+  min-height: 20%;
+}
