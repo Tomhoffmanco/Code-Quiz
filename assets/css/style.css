@@ -5,7 +5,9 @@
   margin-top: 150px;
   width: 50%;
   border: 1px solid black;
-  height: 500px;
+  height: 400px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 #boxBar {
@@ -33,12 +35,69 @@ p {
 }
 
 #boxInfo {
-  padding-left: 120px;
-  padding-right: 1200px;
+  padding-left: 165px;
+  padding-right: 220px;
+  text-align: left;
+  display: none;
 }
 
-#buttonsContainer {
-  margin-top: 20px;
+#buttonsStyle {
+  margin-top: 25px;
   border: 1px solid red;
-  min-height: 20%;
+  min-height: 200px;
+}
+
+#buttonStyle > button {
+  display: block;
+  margin-top: 25px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#buttonStyle button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+#contentResults {
+  margin-top: 15px;
+  border-top: 1px solid gray;
+}
+
+#contentResults {
+  border: 1px solid gray;
+}
+
+#submissionBox {
+  display: none;
+}
+
+#subBox button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+#subBox button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#startButton {
+  display: inline-block;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#startButton button:hover {
+  background-color: green;
+  cursor: pointer;
 }
