@@ -1,103 +1,94 @@
 #questionBox {
+  border: thin solid black;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
-  width: 50%;
-  border: 1px solid black;
-  height: 400px;
   text-align: center;
   padding-bottom: 10px;
+  height: 600px;
 }
 
 #boxBar {
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid red;
 }
 
-#leftDisplay {
+#scoreBox {
   margin-right: auto;
-  padding-top: auto;
-  padding-bottom: auto;
-  border: 1px solid red;
+  padding-top: 2%;
 }
 
-#rightDisplay {
+#timerBox {
   margin-left: auto;
-  border: 1px solid red;
 }
 
-#rightDisplay h3,
+#timerBox > h3,
 p {
   display: inline-block;
 }
 
 #boxInfo {
-  padding-left: 165px;
-  padding-right: 220px;
+  padding-left: 20%;
+  padding-right: 20%;
   text-align: left;
   display: none;
+  margin-top: 75px;
 }
 
 #buttonsStyle {
-  margin-top: 25px;
-  border: 1px solid red;
+  margin-top: 20px;
   min-height: 200px;
 }
 
-#buttonStyle > button {
+#buttonsStyle > button {
   display: block;
-  margin-top: 25px;
-  background-color: blueviolet;
-  color: whitesmoke;
-  width: 100px;
-  border: none;
-  border-radius: 10px;
-  height: 30px;
-}
-
-#buttonStyle button:hover {
-  cursor: pointer;
-  background-color: green;
-}
-
-#contentResults {
-  margin-top: 15px;
-  border-top: 1px solid gray;
-}
-
-#contentResults {
-  border: 1px solid gray;
-}
-
-#submissionBox {
-  display: none;
-}
-
-#subBox button {
+  margin-top: 1.5em;
   background-color: purple;
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
+  height: 30px;
 }
 
-#subBox button:hover {
+#buttonsStyle > button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+#resultContainer {
+  border-top: thin solid gray;
+}
+
+#endContainer {
+  display: none;
+}
+
+#subBox > button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#subBox > button:hover {
   background-color: black;
   cursor: pointer;
 }
 
 #startButton {
   display: inline-block;
-  background-color: blueviolet;
+  background-color: purple;
   color: white;
   border: none;
   border-radius: 5px;
-  height: 25px;
+  height: 30px;
 }
 
-#startButton button:hover {
-  background-color: green;
+#startButton:hover {
+  background-color: black;
   cursor: pointer;
 }
