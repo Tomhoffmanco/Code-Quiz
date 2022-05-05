@@ -1,0 +1,94 @@
+#questionBox {
+  border: thin solid black;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  text-align: center;
+  padding-bottom: 10px;
+  height: 600px;
+}
+
+#boxBar {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#scoreBox {
+  margin-right: auto;
+  padding-top: 2%;
+}
+
+#timerBox {
+  margin-left: auto;
+}
+
+#timerBox > h3,
+p {
+  display: inline-block;
+}
+
+#boxInfo {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: left;
+  display: none;
+  margin-top: 75px;
+}
+
+#buttonsStyle {
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+#buttonsStyle > button {
+  display: block;
+  margin-top: 1.5em;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#buttonsStyle > button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+#resultContainer {
+  border-top: thin solid gray;
+}
+
+#endContainer {
+  display: none;
+}
+
+#subBox > button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#subBox > button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#startButton {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#startButton:hover {
+  background-color: black;
+  cursor: pointer;
+}

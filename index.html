@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Quiz</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <body>
+    <div id="questionBox">
+      <div id="boxBar">
+        <div id="scoreBox">
+          <a href="#">View High Scores</a>
+        </div>
+        <div id="timerBox">
+          <h3>Time:</h3>
+          <p id="time">Loading Time</p>
+        </div>
+      </div>
+
+      <button id="startButton" onclick="startQuiz()">Start The Quiz</button>
+
+      <div id="boxInfo">
+        <h2 id="question">Loading questions...</h2>
+        <div id="buttonsStyle">
+          <button id="choice1" onclick="choose(1)">Loading Choice 1</button>
+          <button id="choice2" onclick="choose(2)">Loading Choice 2</button>
+          <button id="choice3" onclick="choose(3)">Loading Choice 3</button>
+          <button id="choice4" onclick="choose(4)">Loading Choice 4</button>
+        </div>
+
+        <div id="endContainer">
+          <p id="score">Loading Score...</p>
+          <div id="subBox">
+            <p>Enter initials:</p>
+            <input id="input" type="text" />
+            <button id="submit" onclick="submitScore()">Submit</button>
+          </div>
+        </div>
+
+        <div id="resultContainer">
+          <h3 id="result">Awaiting Question Result</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
