@@ -1,59 +1,57 @@
-#questionBox {
+#container {
   border: thin solid black;
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 80px;
   text-align: center;
-  padding-bottom: 10px;
-  height: 600px;
+  padding-bottom: 20px;
 }
 
-#boxBar {
+#topRow {
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#scoreBox {
+#left {
   margin-right: auto;
   padding-top: 2%;
 }
 
-#timerBox {
+#right {
   margin-left: auto;
 }
 
-#timerBox > h3,
+#right > h3,
 p {
   display: inline-block;
 }
 
-#boxInfo {
+#content {
   padding-left: 20%;
   padding-right: 20%;
   text-align: left;
   display: none;
-  margin-top: 75px;
 }
 
-#buttonsStyle {
+#buttonsContainer {
   margin-top: 20px;
   min-height: 200px;
 }
 
-#buttonsStyle > button {
+#buttonsContainer > button {
   display: block;
   margin-top: 1.5em;
   background-color: purple;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 30px;
 }
 
-#buttonsStyle > button:hover {
+#buttonsContainer > button:hover {
   cursor: pointer;
   background-color: black;
 }
@@ -66,15 +64,15 @@ p {
   display: none;
 }
 
-#subBox > button {
+#submissionRow > button {
   background-color: purple;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 30px;
 }
 
-#subBox > button:hover {
+#submissionRow > button:hover {
   background-color: black;
   cursor: pointer;
 }
@@ -84,7 +82,7 @@ p {
   background-color: purple;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 30px;
 }
 

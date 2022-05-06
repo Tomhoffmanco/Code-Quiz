@@ -2,16 +2,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Code Quiz</title>
+    <title>Coding Quiz</title>
   </head>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <body>
-    <div id="questionBox">
-      <div id="boxBar">
-        <div id="scoreBox">
-          <a href="#">View High Scores</a>
+    <div id="container">
+      <div id="topRow">
+        <div id="left">
+          <a href="#">View High Score</a>
         </div>
-        <div id="timerBox">
+        <div id="right">
           <h3>Time:</h3>
           <p id="time">Loading Time</p>
         </div>
@@ -19,24 +19,24 @@
 
       <button id="startButton" onclick="startQuiz()">Start The Quiz</button>
 
-      <div id="boxInfo">
+      <div id="content">
         <h2 id="question">Loading questions...</h2>
-        <div id="buttonsStyle">
+        <div id="buttonsContainer">
           <button id="choice1" onclick="choose(1)">Loading Choice 1</button>
           <button id="choice2" onclick="choose(2)">Loading Choice 2</button>
           <button id="choice3" onclick="choose(3)">Loading Choice 3</button>
           <button id="choice4" onclick="choose(4)">Loading Choice 4</button>
         </div>
-
+        <!--This is the end screen-->
         <div id="endContainer">
           <p id="score">Loading Score...</p>
-          <div id="subBox">
+          <div id="submissionRow">
             <p>Enter initials:</p>
             <input id="input" type="text" />
             <button id="submit" onclick="submitScore()">Submit</button>
           </div>
         </div>
-
+        <!--This is the question answer result-->
         <div id="resultContainer">
           <h3 id="result">Awaiting Question Result</h3>
         </div>

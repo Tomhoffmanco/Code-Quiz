@@ -52,13 +52,12 @@ let questions = [
 
 function startQuiz() {
   //timer starts and content is displayed
-  document.getElementById("boxInfo").style.display = "block";
+  document.getElementById("content").style.display = "block";
 
   timerIntervalId = setInterval(() => {
     timer--;
     document.getElementById("time").innerText = timer;
 
-    //end game
     if (timer <= 0) {
       endGame();
     }
@@ -68,7 +67,7 @@ function startQuiz() {
 //end game function
 function endGame() {
   document.getElementById("question").innerText = "All done!";
-  document.getElementById("buttonsStyle").style.display = "none";
+  document.getElementById("buttonsContainer").style.display = "none";
   document.getElementById("endContainer").style.display = "block";
   document.getElementById("resultContainer").style.display = "none";
   //load the score
@@ -81,7 +80,6 @@ function choose(choiceNumber) {
   const isOutOfTime = decideResult(choiceNumber); //true or false
 
   if (isOutOfTime) {
-    //do something
   } else {
     if (questionNumber < questions.length) {
       navigateToNextQuestion();
@@ -124,10 +122,10 @@ function navigateToNextQuestion() {
 
   const questionText = question.text;
 
-  //set and display question text
+  //set question text
   document.getElementById("question").innerText = questionText;
 
-  //set and display button text
+  //set button text
   document.getElementById("choice1").innerText = question.choice1Text;
   document.getElementById("choice2").innerText = question.choice2Text;
   document.getElementById("choice3").innerText = question.choice3Text;
@@ -149,12 +147,10 @@ function submitScore() {
   window.localStorage.setItem(name, timer);
   console.log(`User ${name} has saved a score of ${timer}`);
 
-  //could only store score to local storage on first page not redirected url
-
   window.location.href = "./scores.html";
 }
 
-// display questons and timer
+//load in the values for question 1 and timer
 document.getElementById("time").innerText = timer;
 document.getElementById("question").innerText = questions[0].text;
 document.getElementById("choice1").innerText = questions[0].choice1Text;
