@@ -68,7 +68,7 @@ function startQuiz() {
 //end game function
 function endGame() {
   document.getElementById("question").innerText = "All done!";
-  document.getElementById("buttonsContainer").style.display = "none";
+  document.getElementById("buttonsStyle").style.display = "none";
   document.getElementById("endContainer").style.display = "block";
   document.getElementById("resultContainer").style.display = "none";
   //load the score
